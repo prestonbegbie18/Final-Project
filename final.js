@@ -6,8 +6,8 @@ function retrieveSavedOrder()
 function makeFullOrder()
 {
   var checkoutName = getCookie("name");
-  var pizza = getCookie("pizzaType");
-  return checkoutName + " order a " + pizza + " pizza";
+  var pizza = getCookie("shirtType");
+  return checkoutName + " order a " + pizza + " shirt";
 }
 function checkoutOrders()
 {
@@ -20,30 +20,30 @@ function saveOrder()
 }
 function order(){
  var name = document.getElementById("orderName");
-  var veg = document.getElementById("checkVeggies").checked;
-  var pep = document.getElementById("checkPepperoni").checked;
-  var sau = document.getElementById("checkSausage").checked;
+  var red = document.getElementById("checkRed").checked;
+  var blue = document.getElementById("checkBlue").checked;
+  var bla = document.getElementById("checkBlack").checked;
 
-if (veg == true && pep == false && sau == false)
+if (red == true && blue == false && bla == false)
 //can use the '!' to use for false and not write false
 {
-  setCookie("pizzaType", "veggie", 1);
+  setCookie("shirtType", "veggie", 1);
 }
-else if (pep == true && sau == true && veg == false)
+else if (blue == true && bla == true && red == false)
 {
-  setCookie("pizzaType", "meat lovers", 1);
+  setCookie("shirtType", "", 1);
 }
-  else if(veg == true && pep == true && sau == true)
+  else if(blac == true && blue == true && red == true)
    {
-    setCookie("pizzaType", "supreme", 1);
+    setCookie("shirtType", "supreme", 1);
   }
-  else if(veg == false && pep == false && sau == false)
+  else if(red == false && blue == false && bla == false)
   {
-    setCookie("pizzaType", "cheese", 1);
+    setCookie("shirtType", "white", 1);
   }
   else
     {
-      setCookie("pizzaType", "custom", 1);
+      setCookie("shirtType", "custom", 1);
     }
     setCookie("name",name.value,1);
     window.location.href="checkout.html"
