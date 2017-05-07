@@ -27,15 +27,23 @@ function order(){
 if (red == true && blue == false && bla == false)
 //can use the '!' to use for false and not write false
 {
-  setCookie("shirtType", "veggie", 1);
+  setCookie("shirtType", "Red", 1);
+}
+else if(blue == true && bla == false && red == false)
+{
+  setCookie("shirtType", "Blue", 1);
+}
+else if( blue == false && bla == true && red == false)
+{
+  setCookie("shirtType", "Black", 1)
 }
 else if (blue == true && bla == true && red == false)
 {
-  setCookie("shirtType", "", 1);
+  setCookie("shirtType", "Dark Blue", 1);
 }
-  else if(blac == true && blue == true && red == true)
+  else if(bla == true && blue == true && red == true)
    {
-    setCookie("shirtType", "supreme", 1);
+    setCookie("shirtType", "Purple", 1);
   }
   else if(red == false && blue == false && bla == false)
   {
