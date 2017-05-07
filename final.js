@@ -7,7 +7,7 @@ function makeFullOrder()
 {
   var checkoutName = getCookie("name");
   var pizza = getCookie("shirtType");
-  return checkoutName + " order a " + pizza + " shirt";
+  return checkoutName + " order a " + shirt + " shirt";
 }
 function checkoutOrders()
 {
@@ -78,3 +78,4 @@ function getCookie(cname) {
         }
     }
     return "";
+  }
