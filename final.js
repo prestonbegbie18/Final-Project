@@ -1,3 +1,8 @@
+var Orders = [];
+var newShirt = new Shirt(red, blue, bla);
+Orders.push(newShirt);
+console.log(Orders.length + " shirts(s).");
+
 function retrieveSavedOrder()
 {
   var saved= getCookie("savedOrder");
