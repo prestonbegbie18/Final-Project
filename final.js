@@ -1,8 +1,3 @@
-var Orders = [];
-var newShirt = new Shirt(red, blue, bla);
-Orders.push(newShirt);
-console.log(Orders.length + " shirts(s).");
-
 function retrieveSavedOrder()
 {
   var saved= getCookie("savedOrder");
@@ -28,10 +23,10 @@ function order(){
   var red = document.getElementById("checkRed").checked;
   var blue = document.getElementById("checkBlue").checked;
   var bla = document.getElementById("checkBlack").checked;
-  var Orders = [];
+  var buyShirt = [];
   var newShirt = new Shirt(red, blue, bla);
-  Orders.push(newShirt);
-  console.log(Orders.length + " shirts(s).");
+  buyShirt.push(newShirt);
+  console.log(buyShirt.length + " shirts(s).");
 
 if (red == true && blue == false && bla == false)
 //can use the '!' to use for false and not write false
