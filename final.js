@@ -1,3 +1,5 @@
+var buyShirt = [];
+
 function retrieveSavedOrder()
 {
   var saved= getCookie("savedOrder");
@@ -23,7 +25,7 @@ function order(){
   var red = document.getElementById("checkRed").checked;
   var blue = document.getElementById("checkBlue").checked;
   var bla = document.getElementById("checkBlack").checked;
-  var buyShirt = [];
+
   var newShirt = new Shirt(red, blue, bla);
   buyShirt.push(newShirt);
   console.log(buyShirt.length + " shirts(s).");
